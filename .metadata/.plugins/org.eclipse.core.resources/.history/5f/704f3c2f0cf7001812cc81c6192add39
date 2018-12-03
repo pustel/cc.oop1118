@@ -1,0 +1,47 @@
+package test;
+import java.util.Scanner;
+public class Molecule {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner kbd = new Scanner(System.in);
+		
+		
+		System.out.print("Wieviele Atome soll das Molekül haben? ");
+		int n = kbd.nextInt() - 1;
+		kbd.close();
+		Atom atom[] = new Atom[n];
+		for (int i=0; i <= n ; i++) { 
+		//setze inhalte	
+		System.out.println("Ordnungszahl?");
+		int oz = kbd.nextInt();
+		atom[i].setProtonNumber(oz);
+		System.out.println("Name?");
+		String eName = kbd.nextLine();
+		atom[i].setName(eName);
+		System.out.println("Elementsymbol?");
+		String symb = kbd.nextLine();
+		atom[i].setSymbol(symb);
+//		System.out.println("PSE-Spalte?");
+//		int group = kbd.nextInt();
+//		atom[i].setGroup(group);
+//		System.out.println("Welcher Periode ehört es an?");
+//		int period = kbd.nextInt();
+//		atom[i].setPeriod(period);
+		System.out.println("Oxidationszahl?");
+		int ox = kbd.nextInt();
+		atom[i].setOxState(ox);
+		
+		}
+		
+		for (int i = 0; i <=n; i++){
+			System.out.println("welches Atom von "+n+1);
+			int k = kbd.nextInt() -1;
+			int t = atom[k].getProtonNumber();
+			System.out.println(atom[k].getSymbol());
+			break;
+			
+		}
+	}
+}

@@ -10,7 +10,7 @@ public class Atom {
 	int oxState;
 
 	// methods
-	public void setAttributes(int protonNumber, String name, String symbol, int group, int period, int oxState) {
+		public void setAttributes(int protonNumber, String name, String symbol, int group, int period, int oxState) {
 
 		this.protonNumber = protonNumber;
 		this.name = name;
@@ -19,24 +19,60 @@ public class Atom {
 		this.period = period;
 		this.oxState = oxState;
 	}
+	public void setProtonNumber(int protonNumber) {
+		this.protonNumber = protonNumber;
+	}
+	public int getProtonNumber() {
+		return this.protonNumber;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return this.name;
+	}
+	public void setSymbol(String symb) {
+		this.symbol = symb;
+	}
+	public String getSymbol() {
+		return this.symbol;
+	}
+	public void setGroup(int group) {
+		this.group = group;
+	}
+	public int getGroup(int group) {
+		return this.group;
+	}
+	public void setPeriod(int period) {
+		this.period = period;
+	}
+	public int getPeriod() {
+		return this.period;
+	}
+	public void setOxState(int oxState) {
+		this.oxState = oxState;
+	}
+	public int getOxState() {
+		return this.oxState;
+	}
 
-	@Override
-	public String toString() {
+	//@Override
+	//public String toString() {
 		// TODO Auto-generated method stub
-		return "OZ" + protonNumber + " " + name;
-	}
+	//	return "OZ" + protonNumber + " " + name;
+	//}
 
-	public Atom() {
+	//public Atom() {
 		// TODO Auto-generated constructor stub
-	}
+	//}
 
-	public Atom(int protonNumber, String name, String symbol, int group, int period, int oxState) {
-		this.protonNumber = protonNumber;
-		this.name = name;
-		this.symbol = symbol;
-		this.group = group;
-		this.period = period;
-		this.oxState = oxState;
-	}
+	//public Atom(int protonNumber, String name, String symbol, int group, int period, int oxState) {
+	//	this.protonNumber = protonNumber;
+	//	this.name = name;
+	//	this.symbol = symbol;
+	//	this.group = group;
+	//	this.period = period;
+	//	this.oxState = oxState;
+	//}
 
 }

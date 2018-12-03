@@ -1,0 +1,28 @@
+package test;
+import java.util.Scanner;
+public class Molecule {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Atom atom[] = new Atom();
+		Scanner kbd = Scanner(System.in);
+		System.out.print("Wieviele Atome soll das Molekül haben? ");
+		int n = kbd.nextInt();
+		n -= 1;
+		for (int i=0, i <= n, i++) { 
+		int oz = kbd.nextInt();
+		atom[i].setProtonNumber(oz);
+		String eName = kbd.nextLine();
+		atom[i].setName(eName);
+		String symb = kbd.nextLine();
+		atom[i].setSymbol(symb);
+		int group = kbd.nextInt();
+		atom[i].setGroup(group);
+		int period = kbd.nextInt();
+		atom[i].setPeriod(period);
+		int ox = kbd.nextInt();
+		atom[i].setOxState(ox);
+		}
+		
+	}
+}
