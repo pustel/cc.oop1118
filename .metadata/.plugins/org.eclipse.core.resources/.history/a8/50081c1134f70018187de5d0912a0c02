@@ -37,7 +37,7 @@ public class Molecule {
 
 		}}
 		int i=0;
-		ArrayList<Integer> counter = new ArrayList<Integer>();
+		private ArrayList<Integer> counter = new ArrayList<Integer>();
 		int t = atom[i].getProtonNumber();
 		counter.add(t);
 		i++;
@@ -57,12 +57,12 @@ public class Molecule {
 				counter.add(j,h);
 				break;
 			case 1:
+				counter.add(atom[i].getProtonNumber());
 				break;
 			}
-			//	counter.add(atom[i].getProtonNumber());	
-			}
-			
-			i = i + 1;
+				}
+			counter.add
+			i ++;
 		}
 	}
 }

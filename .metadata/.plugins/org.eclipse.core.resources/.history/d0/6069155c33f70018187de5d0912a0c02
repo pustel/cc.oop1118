@@ -1,5 +1,6 @@
 package test;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import.java.util.ArrayList;
 
@@ -37,13 +38,12 @@ public class Molecule {
 
 		}}
 		int i=0;
-		ArrayList<Integer> counter = new ArrayList<Integer>();
-		int t = atom[i].getProtonNumber();
-		counter.add(t);
+		private ArrayList <Integer,String> counter = new ArrayList<Integer,String>();
+		counter.add(atom[i].getProtonNumber(): atom[i].getSymbol());
 		i++;
 		while (i <= n) {
 			for (int j = 0; j <=i;j++) {
-				
+				int t;
 				if(atom[i].getProtonNumber() == counter(j)) {
 					t = 0;}
 				else {
@@ -57,12 +57,12 @@ public class Molecule {
 				counter.add(j,h);
 				break;
 			case 1:
+				counter.add(atom[i].getProtonNumber());
 				break;
 			}
-			//	counter.add(atom[i].getProtonNumber());	
-			}
-			
-			i = i + 1;
+				}
+			counter.add
+			i ++;
 		}
 	}
 }
