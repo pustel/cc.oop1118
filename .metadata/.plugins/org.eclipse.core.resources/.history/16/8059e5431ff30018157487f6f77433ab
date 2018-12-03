@@ -1,0 +1,17 @@
+
+public class Tankstelle {
+
+	double literPreis = 1.5;
+	
+	
+
+	void vollTanken(double bedarf) {
+		double gesamtPreis = bedarf * this.literPreis;	
+		System.out.println(gesamtPreis);
+		//gesamtPreis = (double)Math.round(gesamtPreis * 100) / 100;
+		//System.out.println(gesamtPreis);
+		System.out.printf("%s %.4f %s", "Bitte entrichten sie", gesamtPreis , "€");
+		
+
+	}
+}

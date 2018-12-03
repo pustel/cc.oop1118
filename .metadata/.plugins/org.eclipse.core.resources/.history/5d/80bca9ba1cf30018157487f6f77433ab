@@ -1,0 +1,76 @@
+
+public class Auto {
+	// Attribute = Eigenschaften
+	String marke;
+	String modell;
+	String serienNummer;
+	int kw;
+	int hubRaum;
+	int anzahlSitze;
+	double tankVolumen = 60;
+	double verbrauch = 8;
+	double reichweite;
+	double gefahreneKm;
+	double rest;
+	double restKm;
+
+	// Methoden = Fähigkeiten
+//	void druckeMarkeUndModell() {
+//		System.out.println(marke + " " + modell);
+//		System.out.println(serienNummer);
+//	}
+
+//void berechneReichweite() {
+//		 Tank 100l
+//		 Verbrauch 10l / 100km
+//		 Reichweite => 100l / 10l = 10 		10*100km = 1000km
+
+//		 Tank 60
+//		 Verbrauch 5l / 100km
+//		 Reichweite => 60l / 5l = 12 		12*100km = 1200km
+
+//		reichweite = tankVolumen / verbrauch * 100;
+//	}
+
+	void druckeReichweite() {
+		System.out.println("Reichweite: " + reichweite + " km");
+	}
+
+	void druckeInfo() {
+//		druckeMarkeUndModell();
+//		berechneReichweite();
+		System.out.println("Tankvolumen: " + tankVolumen + " l");
+		System.out.println("Verbrauch: " + verbrauch + "l/100 km");
+		druckeReichweite();
+		System.out.println();
+	}
+
+	void setzeAttribute(String marke, String modell, String serienNummer, int kW, int hubRaum, int anzahlSitze,
+			int tankVolumen, int verbrauch) {
+		this.marke = marke;
+		this.modell = modell;
+		this.serienNummer = serienNummer;
+		this.kw = kW;
+		this.hubRaum = hubRaum;
+		this.anzahlSitze = anzahlSitze;
+		this.tankVolumen = tankVolumen;
+		this.verbrauch = verbrauch;
+		this.rest = this.tankVolumen;
+	}
+
+	void tankRest(int gefahreneKm) {
+		//this.gefahreneKm = gefahreneKm = 0;
+		System.out.println(tankVolumen + " " + rest);
+		this.rest = tankVolumen - (gefahreneKm * verbrauch / 100);
+		this.restKm = Math.floor(rest / verbrauch * 100);
+		System.out.println();
+		System.out.println("Im Tank sollten sich noch " + this.rest + " l Treibstoff befinden");
+		System.out.println("Das reicht etwa für " + restKm + " weitere Kilometer");
+	}
+
+	double tankBedarf() {
+//		int bedarf = Math.floor( gefahrenekm*verbrauch);
+//		return bedarf;
+		return this.tankVolumen - this.rest;
+	}
+}

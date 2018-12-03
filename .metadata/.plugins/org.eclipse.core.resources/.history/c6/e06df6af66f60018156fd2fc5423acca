@@ -1,0 +1,14 @@
+package test;
+
+public class Atom {
+	//variables
+	int ordnungszahl;
+	String name;
+	String symbol;
+	int gruppe;
+	int periode;
+	int oxidationsstufe;
+	
+	//methods
+
+}

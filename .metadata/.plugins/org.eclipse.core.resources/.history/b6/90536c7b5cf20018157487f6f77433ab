@@ -1,0 +1,20 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Scanner derScanner = new Scanner(System.in);
+		Auto auto1 = new Auto();
+		Auto auto2 = new Auto();
+		Auto auto3 = new Auto();
+		
+		auto1.setzeAttribute("Audi", "A6", "4894078963", 48, 2, 5, 72, 8);
+		auto2.setzeAttribute("Mercedes", "C-Klasse", "FDAC734833877449", 55, 4, 5, 66, 12);
+		auto3.setzeAttribute("BMW", "3er", "F-BMW-3er-8394083242398", 75, 6, 2, 120, 23);
+		
+		auto1.druckeInfo();	// Gibt das selbe aus, wie Zeile die letzen Zeilen
+		auto2.druckeInfo();
+		auto3.druckeInfo();
+		
+	}
+
+}

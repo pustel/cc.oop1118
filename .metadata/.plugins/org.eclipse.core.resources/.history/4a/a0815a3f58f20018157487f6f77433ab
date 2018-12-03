@@ -1,0 +1,32 @@
+package atoemchenmain;
+
+public class aTOEMEIG {
+
+	public aTOEMEIG() {
+		// TODO Auto-generated constructor stub
+		//*********************************************************************
+		Atom auto1 = new Atom ();
+		
+		auto1.setzeAttribute("Audi", "A6", "4894078963", 48, 2, 5, 72, 8);
+		
+		auto1.serienNummer = "4894078963";
+		auto3.anzahlSitze = 5;
+		
+		auto1.tankVolumen = 72;		// Angaben in l
+		auto1.verbrauch = 8;		// Angaben in l
+		
+		auto2.tankVolumen = 90;
+		
+//		auto1.druckeMarkeUndModell();
+//		auto1.berechneReichweite();
+//		auto1.druckeReichweite();
+//		Wurde in druckeInfo() zusammengefasst		
+		auto1.druckeInfo();	// Gibt das selbe aus, wie Zeile die letzen Zeilen
+		auto2.druckeInfo();
+		auto3.druckeInfo();
+		
+	
+		//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	}
+
+}

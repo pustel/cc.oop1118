@@ -1,0 +1,20 @@
+
+public class Tankstelle {
+
+	public Tankstelle() {
+	double literPreis = 1.5;
+	double gesamtPreis = 0.0;
+	double anForderung = 0.0;
+	
+	 double vollTanken (double bedarf) {
+		 this.anForderung = bedarf;
+//	 	} 
+//	 double Bezahlen
+		gesamtPreis = anForderung * literPreis;
+//		return gesamtPreis;		
+	 System.out.println("Bitte entrichten sie "+ gesamtPreis+" €");
+	 }
+	
+	}}
+
+

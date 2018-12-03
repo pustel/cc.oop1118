@@ -1,0 +1,20 @@
+
+public class Zankstelle {
+
+	public Zankstelle() {
+	int kraftStoffvorrat;//liter
+	double literPreis = 1.5;
+	double gesamtPreis = 0.0;
+	double anForderung = 0.0;
+	
+	 double vollTanken(double bedarf) {
+		 this.anForderung = bedarf;
+//	 	} 
+//	 double
+		gesamtPreis = anForderung * literPreis;
+		return gesamtPreis;		
+	  }
+	
+	}}
+
+
