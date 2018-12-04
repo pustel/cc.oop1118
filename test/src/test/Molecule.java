@@ -1,7 +1,7 @@
 package test;
 
 import java.util.Scanner;
-import.java.util.ArrayList;
+import java.util.ArrayList;
 
 public class Molecule {
 
@@ -35,34 +35,34 @@ public class Molecule {
 			int ox = kbd.nextInt();
 			atom[i].setOxState(ox);
 
-		}}
+		}
 		int i=0;
-		ArrayList<Integer> counter = new ArrayList<Integer>();
-		int t = atom[i].getProtonNumber();
-		counter.add(t);
-		i++;
-		while (i <= n) {
-			for (int j = 0; j <=i;j++) {
-				
-				if(atom[i].getProtonNumber() == counter(j)) {
-					t = 0;}
-				else {
-					t = 1;
-				}
-				switch(t) {
-			case 0: 
-				int h = counter(j); 
-				counter.remove(j);
-				h +=1;
-				counter.add(j,h);
-				break;
-			case 1:
-				break;
-			}
-			//	counter.add(atom[i].getProtonNumber());	
-			}
+//		ArrayList<Integer> counter = new ArrayList<Integer>();
+//		int t = atom[i].getProtonNumber();
+//		counter.add(t);
+//		i++;
+//		while (i <= n) {
+//			for (int j = 0; j <=i;j++) {
+//				
+//				if(atom[i].getProtonNumber() == counter.get(j)) {
+//					t = 0;}
+//				else {
+//					t = 1;
+//				}
+//				switch(t) {
+//			case 0: 
+//				int h = counter.get(j); 
+//				counter.remove(j);
+//				h +=1;
+//				counter.add(j,h);
+//				break;
+//			case 1:
+//				break;
+//			}
+//			//	counter.add(atom[i].getProtonNumber());	
+//			}
 			
 			i = i + 1;
 		}
 	}
-}
+
