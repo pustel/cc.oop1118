@@ -22,7 +22,7 @@ public class Arrays {
 	// Methoden
 	public void gebeZahlen() {
 		// Zahl0-4 von Hand ausgeben
-		System.out.println(zahl0 + " " + zahl1 + " " + zahl2 + " " + zahl3 + " " + zahl4);
+		//System.out.println(zahl0 + " " + zahl1 + " " + zahl2 + " " + zahl3 + " " + zahl4);
 		
 		// For each Schleife
 		gebeIntArrayForEach(zahl);
@@ -63,6 +63,7 @@ public class Arrays {
 		for (int element : array) {
 			System.out.print(element + " ");
 		}
+		System.out.println();
 	}
 
 	private void gebeIntArrayFor(int[] array) {
@@ -78,6 +79,7 @@ public class Arrays {
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
 		}
+		System.out.println();
 	}
 	
 	private void setzeArray(int[] array, int wert) {
@@ -96,9 +98,9 @@ public class Arrays {
 		return (int)(Math.random()*100);
 	}
 	
-	private void sortiereAufsteigend(int[] array) {
+	//private void sortiereAufsteigend(int[] array) {
 		// Bubblesort
 		// 1. Zahlen tauschen
 		
-	}
+	//}
 }
