@@ -21,7 +21,14 @@ public class Fahrzeug {
 			this.tankVolumen = tankVolumen;
 			this.tankStand = tankVolumen;
 			this.verbrauch = verbrauch;
-			System.out.println("Ein neues Fahrzeug wurde Erstellt.");
+			System.out.println("Ein neuer "+ this.modell+" wurde erworben. ");
+		
+		//	System.out.println("Mit einer Tankfüllung umfahre ich eine quadratische Fläche von "+ dasFahrzeug1.quadrat() + " km²");
+			
+			
+		}
+		protected void test() {
+			System.out.println("test0");
 		}
 		
 	}
