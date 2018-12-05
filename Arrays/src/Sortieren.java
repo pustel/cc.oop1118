@@ -4,7 +4,7 @@ public class Sortieren {
 	// Attribute
 	boolean	verg = false;
 	// Initialisierung ohne Werte
-	private int[] zahlen = new int[10];
+	private int[] zahlen = new int[100];
 
 	// Methoden
 	public void starte() {
@@ -18,12 +18,7 @@ public class Sortieren {
 		neueZeile();
 		
 		// Bubblesort aufrufen
-		sortiereSteigend(zahlen, false);
-		gebeIntArrayFor(zahlen);
-		System.out.println();
-		sortiereSteigend(zahlen, true);
-		gebeIntArrayFor(zahlen);
-		System.out.println();
+		
 		sortiereSteigend(zahlen, true);
 		gebeIntArrayFor(zahlen);
 		System.out.println();
@@ -110,7 +105,7 @@ public class Sortieren {
 //				}
 //			}
 //		}
-	
+	//steig ist boolean der entsdcheidet, ob auf- oder absteigend
 	private void sortiereSteigend(int[] array, boolean steig) {
 	
 		for (int i = array.length; i >= 0; i--){
