@@ -47,5 +47,17 @@ public class Spielfeld {
 	public int gebeHoehe() {
 		return spielfeld[1].length;
 	}
+	
 
+	public boolean pruefevoll() {
+		boolean voll = true;
+		for (int x = 0; x < 3; x++) {
+			for (int y = 0; y < 3; y++) {
+				
+				if(spielfeld[x][y] == 0) voll = false;
+			}
+			
+		}
+		return voll;
+	}
 }

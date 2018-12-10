@@ -14,7 +14,6 @@ public class Steuerung {
 		// Begrüßungstext
 		dieOberflaeche.gebeText("TicTacToe V1.0", true);
 		spielerEinlesen();
-		
 		feldBreite = dasSpielfeld.gebeBreite();
 		feldHoehe = dasSpielfeld.gebeHoehe();
 	}
@@ -24,15 +23,16 @@ public class Steuerung {
 		// Hier kommt unser Programmablauf rein
 
 		// Zustandsautomat
-		while (zustand < 5) {
+		while (zustand < 5 ) {
 			switch (zustand) {
 			// Spiel läuft
 			case 0:
 				spielfeldAusgeben();
 				feldSetzen();
 				pruefeGewonnen();
+
 				spielerWechseln();
-				
+				checkvoll();
 				break;
 
 			// Spieler 1 gewinnt
@@ -226,6 +226,13 @@ public class Steuerung {
 				break;
 			}
 		}
-		
+		}
+		private void checkvoll() {
+		//dasSpielfeld.pruefeVoll
+		if(dasSpielfeld.pruefevoll() != false) {
+			zustand = 3;
+			}
+		else ;
+		}
 	}
-}
+	
